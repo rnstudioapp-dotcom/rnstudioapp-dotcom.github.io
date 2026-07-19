@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pack de Conteúdo Pet Shop — 60 Reels Prontos | RN Studio</title>
+<meta name="description" content="60 Reels prontos para o Instagram do seu pet shop. Sem aparecer na câmera. Sem criar do zero. Por R$37,90.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --laranja: #F97316;
+    --laranja-escuro: #C2410C;
+    --preto: #080808;
+    --cinza-escuro: #141414;
+    --cinza-card: #1C1C1C;
+    --cinza-borda: #2A2A2A;
+    --cinza-texto: #9CA3AF;
+    --branco: #FFFFFF;
+    --branco-soft: #F0F0F0;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--preto);
+    color: var(--branco);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* BARRA TOPO */
+  .topbar {
+    background: var(--laranja);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--preto);
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    border-bottom: 1px solid var(--cinza-borda);
+    position: sticky;
+    top: 0;
+    background: rgba(8,8,8,0.95);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  .logo {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--branco);
+  }
+  .logo span { color: var(--laranja); }
+  .nav-cta {
+    background: var(--laranja);
+    color: var(--preto);
+    font-weight: 800;
+    font-size: 13px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+    letter-spacing: 0.03em;
+  }
+  .nav-cta:hover { background: var(--laranja-escuro); color: var(--branco); }
+
+  /* HERO */
+  .hero {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: var(--laranja);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 7vw, 64px);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--laranja);
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--cinza-texto);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: var(--laranja);
+    color: var(--preto);
+    font-weight: 900;
+    font-size: 17px;
+    padding: 18px 48px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: -0.01em;
+    box-shadow: 0 0 40px rgba(249,115,22,0.3);
+  }
+  .hero-cta:hover {
+    background: var(--laranja-escuro);
+    color: var(--branco);
+    transform: translateY(-2px);
+    box-shadow: 0 0 60px rgba(249,115,22,0.4);
+  }
+  .hero-sub {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #555;
+  }
+
+  /* STATS */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    border-top: 1px solid var(--cinza-borda);
+    border-bottom: 1px solid var(--cinza-borda);
+    margin: 0 0 80px;
+  }
+  .stat {
+    flex: 1;
+    max-width: 200px;
+    padding: 32px 20px;
+    text-align: center;
+    border-right: 1px solid var(--cinza-borda);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--laranja);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--cinza-texto);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* STORIES GRID */
+  .section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--laranja);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+  }
+  .section-desc {
+    font-size: 16px;
+    color: var(--cinza-texto);
+    margin-bottom: 40px;
+    max-width: 480px;
+  }
+
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .story-card {
+    aspect-ratio: 9/16;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: var(--cinza-card);
+    border: 1px solid var(--cinza-borda);
+  }
+  .story-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .story-num {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: var(--laranja);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  /* O QUE INCLUI */
+  .inclui-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .inclui-card {
+    background: var(--cinza-card);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 22px 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: border-color 0.2s;
+  }
+  .inclui-card:hover { border-color: var(--laranja); }
+  .inclui-icon {
+    font-size: 22px;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .inclui-titulo {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--branco);
+  }
+  .inclui-desc {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+  }
+  .bonus-card {
+    grid-column: 1 / -1;
+    background: rgba(249,115,22,0.06);
+    border: 1px solid rgba(249,115,22,0.25);
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  /* PARA QUEM */
+  .paraquem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .paraquem-card {
+    background: var(--cinza-card);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .paraquem-check {
+    width: 28px;
+    height: 28px;
+    background: var(--laranja);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+  .paraquem-titulo {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .paraquem-desc {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+  }
+
+  /* COMO FUNCIONA */
+  .passos {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+  .passos::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: 40px;
+    width: 1px;
+    background: var(--cinza-borda);
+  }
+  .passo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--cinza-borda);
+  }
+  .passo:last-child { border-bottom: none; }
+  .passo-num {
+    width: 38px;
+    height: 38px;
+    background: var(--laranja);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--preto);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .passo-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .passo-desc {
+    font-size: 14px;
+    color: var(--cinza-texto);
+    line-height: 1.6;
+  }
+
+  /* PREÇO */
+  .preco-box {
+    max-width: 480px;
+    margin: 0 auto;
+    background: var(--cinza-card);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .preco-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--laranja);
+  }
+  .preco-de {
+    font-size: 14px;
+    color: var(--cinza-texto);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+  .preco-por {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    margin-bottom: 8px;
+  }
+  .preco-valor {
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--laranja);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .preco-detalhe {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    margin-bottom: 32px;
+  }
+  .preco-cta {
+    display: block;
+    background: var(--laranja);
+    color: var(--preto);
+    font-weight: 900;
+    font-size: 18px;
+    padding: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .preco-cta:hover { background: var(--laranja-escuro); color: var(--branco); }
+  .preco-garantia {
+    font-size: 12px;
+    color: #555;
+  }
+  .preco-itens {
+    text-align: left;
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .preco-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--branco-soft);
+  }
+  .preco-item::before {
+    content: '✓';
+    color: var(--laranja);
+    font-weight: 900;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--cinza-borda);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .footer-logo {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  .footer-logo span { color: var(--laranja); }
+  footer p {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 4px;
+  }
+  footer a { color: var(--cinza-texto); text-decoration: none; }
+  footer a:hover { color: var(--laranja); }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--cinza-borda);
+    margin: 0 0 80px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    .hero { padding: 56px 20px 48px; }
+    .stats { flex-wrap: wrap; }
+    .stat { min-width: 50%; border-right: none; border-bottom: 1px solid var(--cinza-borda); }
+    .stat:nth-child(odd) { border-right: 1px solid var(--cinza-borda); }
+    .stories-grid { grid-template-columns: repeat(2, 1fr); }
+    .inclui-grid { grid-template-columns: 1fr; }
+    .paraquem-grid { grid-template-columns: 1fr; }
+    .preco-box { padding: 36px 24px; }
+    .preco-valor { font-size: 52px; }
+    .section { padding: 0 20px 60px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- BARRA TOPO -->
+<div class="topbar">
+  🐾 Produto digital — entrega imediata após o pagamento
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">RN<span>.</span>Studio</div>
+  <a href="https://pay.cakto.com.br/cgffxwj_988976" class="nav-cta">Comprar agora — R$37,90</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🐶 Pack de Conteúdo Instagram</div>
+  <h1>60 Reels prontos para o seu <em>pet shop</em></h1>
+  <p>Sem aparecer na câmera. Sem criar do zero. Só publicar e atrair mais clientes — por 2 meses inteiros.</p>
+  <a href="https://pay.cakto.com.br/cgffxwj_988976" class="hero-cta">Quero o pack por R$37,90 →</a>
+  <p class="hero-sub">Pagamento único · Acesso imediato · Garantia de 7 dias</p>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">60</div>
+    <div class="stat-label">Reels prontos</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">60</div>
+    <div class="stat-label">Dias de conteúdo</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">0</div>
+    <div class="stat-label">Aparecer na câmera</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">R$0,63</div>
+    <div class="stat-label">Por Reel</div>
+  </div>
+</div>
+
+<!-- AMOSTRAS -->
+<section class="section">
+  <div class="section-label">Amostras do pack</div>
+  <h2 class="section-title">Veja o que você vai receber</h2>
+  <p class="section-desc">Cada imagem já vem com o hook pronto. Você só anima no CapCut ou Canva e publica.</p>
+  <div class="stories-grid">
+    <div class="story-card">
+      <img src="assets/story-01.png" alt="Reel 1 — Pet shop" loading="lazy">
+      <div class="story-num">REEL 01</div>
+    </div>
+    <div class="story-card">
+      <img src="assets/story-02.png" alt="Reel 2 — Pet shop" loading="lazy">
+      <div class="story-num">REEL 02</div>
+    </div>
+    <div class="story-card">
+      <img src="assets/story-03.png" alt="Reel 3 — Pet shop" loading="lazy">
+      <div class="story-num">REEL 03</div>
+    </div>
+    <div class="story-card">
+      <img src="assets/story-04.png" alt="Reel 4 — Pet shop" loading="lazy">
+      <div class="story-num">REEL 04</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- O QUE INCLUI -->
+<section class="section">
+  <div class="section-label">Conteúdo do pack</div>
+  <h2 class="section-title">O que está incluso</h2>
+  <p class="section-desc">Tudo que você precisa para 2 meses de presença profissional no Instagram.</p>
+  <div class="inclui-grid">
+    <div class="inclui-card">
+      <div class="inclui-icon">🎬</div>
+      <div>
+        <div class="inclui-titulo">60 Reels prontos</div>
+        <div class="inclui-desc">Imagens no formato 9:16, prontas para animar no CapCut ou Canva e publicar como Reel.</div>
+      </div>
+    </div>
+    <div class="inclui-card">
+      <div class="inclui-icon">✍️</div>
+      <div>
+        <div class="inclui-titulo">60 Legendas estratégicas</div>
+        <div class="inclui-desc">Uma legenda por Reel com CTA, hashtags e emojis. Só copiar e colar no Instagram.</div>
+      </div>
+    </div>
+    <div class="inclui-card">
+      <div class="inclui-icon">📅</div>
+      <div>
+        <div class="inclui-titulo">Calendário de 60 dias</div>
+        <div class="inclui-desc">Cronograma dia a dia dizendo qual Reel publicar. Zero decisão, zero estresse.</div>
+      </div>
+    </div>
+    <div class="inclui-card">
+      <div class="inclui-icon">🎯</div>
+      <div>
+        <div class="inclui-titulo">6 categorias de conteúdo</div>
+        <div class="inclui-desc">Educativo, provocação, transformação, autoridade, curiosidade e sazonalidade.</div>
+      </div>
+    </div>
+    <div class="inclui-card">
+      <div class="inclui-icon">🖼️</div>
+      <div>
+        <div class="inclui-titulo">Imagens de alta qualidade</div>
+        <div class="inclui-desc">Fotos profissionais geradas por IA, sem rosto humano em destaque. Faceless de verdade.</div>
+      </div>
+    </div>
+    <div class="inclui-card">
+      <div class="inclui-icon">⚡</div>
+      <div>
+        <div class="inclui-titulo">Compatível com CapCut e Canva</div>
+        <div class="inclui-desc">Imagens prontas para você adicionar música e exportar como vídeo. Gratuito.</div>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="inclui-icon">🎁</div>
+      <div>
+        <div class="inclui-titulo">BÔNUS: Guia de como usar o pack</div>
+        <div class="inclui-desc">PDF com instruções passo a passo para publicar os Reels e agendar o conteúdo de forma automática.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PARA QUEM É -->
+<section class="section">
+  <div class="section-label">Para quem é</div>
+  <h2 class="section-title">Este pack é para você se...</h2>
+  <p class="section-desc">Donos de pet shop que querem presença digital sem virar criador de conteúdo.</p>
+  <div class="paraquem-grid">
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Não tem tempo para criar conteúdo</div>
+      <div class="paraquem-desc">Você cuida do pet shop. A gente cuida do Instagram.</div>
+    </div>
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Não quer aparecer na câmera</div>
+      <div class="paraquem-desc">Todos os Reels são faceless — sem mostrar rosto, sem gravar vídeo.</div>
+    </div>
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Quer atrair mais clientes pelo Instagram</div>
+      <div class="paraquem-desc">Conteúdo profissional que gera reconhecimento e agendamentos.</div>
+    </div>
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Não entende de design ou edição</div>
+      <div class="paraquem-desc">Tudo pronto. Só animar com música no CapCut em 2 minutos.</div>
+    </div>
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Quer consistência sem esforço</div>
+      <div class="paraquem-desc">60 dias de conteúdo programado. Um Reel por dia, no horário que você escolher.</div>
+    </div>
+    <div class="paraquem-card">
+      <div class="paraquem-check">✓</div>
+      <div class="paraquem-titulo">Quer resultado sem gastar muito</div>
+      <div class="paraquem-desc">Menos de R$1 por Reel. Sem mensalidade, sem assinatura.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMO FUNCIONA -->
+<section class="section">
+  <div class="section-label">Passo a passo</div>
+  <h2 class="section-title">Como funciona</h2>
+  <p class="section-desc">Do pagamento à primeira publicação em menos de 30 minutos.</p>
+  <div class="passos">
+    <div class="passo">
+      <div class="passo-num">1</div>
+      <div>
+        <div class="passo-titulo">Compre o pack</div>
+        <div class="passo-desc">Pagamento via Pix ou cartão. Acesso imediato após confirmação.</div>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">2</div>
+      <div>
+        <div class="passo-titulo">Baixe os arquivos</div>
+        <div class="passo-desc">Você recebe um link com as 60 imagens + legendas + calendário de postagem.</div>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">3</div>
+      <div>
+        <div class="passo-titulo">Anime no CapCut ou Canva</div>
+        <div class="passo-desc">Importe a imagem, adicione uma música de fundo e exporte como vídeo. Leva 2 minutos.</div>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">4</div>
+      <div>
+        <div class="passo-titulo">Cole a legenda pronta</div>
+        <div class="passo-desc">Cada Reel tem legenda com CTA, hashtags e emojis. Só copiar e colar.</div>
+      </div>
+    </div>
+    <div class="passo">
+      <div class="passo-num">5</div>
+      <div>
+        <div class="passo-titulo">Publique e repita por 60 dias</div>
+        <div class="passo-desc">O calendário diz exatamente o que publicar em cada dia. Sem pensar, sem decidir.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PREÇO -->
+<section class="section" style="padding-bottom: 100px;">
+  <div class="section-label" style="text-align:center;">Investimento</div>
+  <h2 class="section-title" style="text-align:center; margin-bottom:40px;">Pronto para começar?</h2>
+  <div class="preco-box">
+    <div class="preco-de">De R$97,00</div>
+    <div class="preco-por">Hoje por apenas</div>
+    <div class="preco-valor">R$37,90</div>
+    <div class="preco-detalhe">Pagamento único · Sem mensalidade</div>
+    <div class="preco-itens">
+      <div class="preco-item">60 Reels prontos para o Instagram</div>
+      <div class="preco-item">60 Legendas com CTA e hashtags</div>
+      <div class="preco-item">Calendário de postagem de 60 dias</div>
+      <div class="preco-item">6 categorias de conteúdo</div>
+      <div class="preco-item">Imagens faceless de alta qualidade</div>
+      <div class="preco-item">Guia de uso em PDF (bônus)</div>
+    </div>
+    <a href="https://pay.cakto.com.br/cgffxwj_988976" class="preco-cta">Comprar agora →</a>
+    <div class="preco-garantia">🔒 Garantia de 7 dias — se não gostar, devolvemos 100%</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">RN<span>.</span>Studio</div>
+  <p>Produto digital criado por RN Studio</p>
+  <p>Dúvidas? <a href="mailto:rnstudio.app@gmail.com">rnstudio.app@gmail.com</a></p>
+  <p style="margin-top: 20px;">© 2025 RN Studio · Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
